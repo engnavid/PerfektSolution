@@ -7,7 +7,7 @@ function Footer() {
     return (
         <div>
             <Container fluid>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{paddingTop:'5rem'}}>
                 jksdksd
             </Navbar>
             </Container>

@@ -5,7 +5,8 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import EventData from './EventData'
 import UserButtonPress from './ModalDataEntry'
-import CorexTable from './CorexTable';
+import CorexTable from './CorexTable'
+import Clock from './Clock'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           {/* <UserButtonPress /> */}
         {/* </Col> */}
       {/* </Row> */}
+      <Clock />
       <Footer style={{marginTop: "100", paddingTop:"5"}} />
     </div>
   );
