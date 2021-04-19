@@ -67,7 +67,7 @@ const CorexTable = () => {
 
 
     const changeEmployeeStatus = (id) => {
-        setChangeStatus(data.map( (task) => task.id === id ?
+        setChangeStatus(changeStatus.map( (task) => task.id === id ?
         {...task, Status : "Absent" } : task));
     }
 
@@ -99,7 +99,7 @@ const CorexTable = () => {
                             
                             <Dropdown.Menu>
                                 {
-                                    data.map(item => (
+                                    changeStatus.map(item => (
                                         // <DropdownItem value={item.Name} onSelect={() => fun(item.Status)}>{item.Name}</DropdownItem>
                                         <DropdownItem value={item.Name} onSelect={() => changeEmployeeStatus(item.id)}>{item.Name}</DropdownItem>
                                     ))
@@ -285,57 +285,57 @@ function checkStatus(props){
 }
 
 
-const data = [
-    {
-        id    : '1',
-        "Name": "A",
-        "Roll": "Admin",
-        "Status": "Available",
-        "Flag": "Shape"
-    },
-    {
-        id    : '2',
-        "Name": "B",
-        "Roll": "Customer",
-        "Status": "Absent",
-        "Flag": "Shape"
-    },
-    {
-        id    : '3',
-        "Name": "C",
-        "Roll": "Admin",
-        "Status": "With Customer",
-        "Flag": "Shape"
-    },
-    {
-        id    : '4',
-        "Name": "D",
-        "Roll": "Employee",
-        "Status": "Absent",
-        "Flag": "Shape"
-    },
-    {
-        id    : '5',
-        "Name": "E",
-        "Roll": "Employee",
-        "Status": "Break",
-        "Flag": "Shape"
-    },
-    {
-        id    : '6',
-        "Name": "F",
-        "Roll": "Employee",
-        "Status": "Available",
-        "Flag": "<i class='far fa-flag'></i>"
-    },
-    {
-        id    : '7',
-        "Name": "G",
-        "Roll": "Employee",
-        "Status": "Available",
-        "Flag": "<i class='far fa-flag'></i>"
-    }
-]
+// const data = [
+//     {
+//         id    : '1',
+//         "Name": "A",
+//         "Roll": "Admin",
+//         "Status": "Available",
+//         "Flag": "Shape"
+//     },
+//     {
+//         id    : '2',
+//         "Name": "B",
+//         "Roll": "Customer",
+//         "Status": "Absent",
+//         "Flag": "Shape"
+//     },
+//     {
+//         id    : '3',
+//         "Name": "C",
+//         "Roll": "Admin",
+//         "Status": "With Customer",
+//         "Flag": "Shape"
+//     },
+//     {
+//         id    : '4',
+//         "Name": "D",
+//         "Roll": "Employee",
+//         "Status": "Absent",
+//         "Flag": "Shape"
+//     },
+//     {
+//         id    : '5',
+//         "Name": "E",
+//         "Roll": "Employee",
+//         "Status": "Break",
+//         "Flag": "Shape"
+//     },
+//     {
+//         id    : '6',
+//         "Name": "F",
+//         "Roll": "Employee",
+//         "Status": "Available",
+//         "Flag": "<i class='far fa-flag'></i>"
+//     },
+//     {
+//         id    : '7',
+//         "Name": "G",
+//         "Roll": "Employee",
+//         "Status": "Available",
+//         "Flag": "<i class='far fa-flag'></i>"
+//     }
+// ]
 
 // const available = data.item.filter(item => item.Status == 'Available'),
 // const absent = data.item.filter(item => item.Status == 'Absent'),
